@@ -45,6 +45,7 @@ export default class Signup extends Component {
     event.preventDefault();
 
     this.setState({ isLoading: true });
+    //CHECK IF USER IS ALREADY CREATED
 
     try {
       const newUser = await Auth.signUp({
